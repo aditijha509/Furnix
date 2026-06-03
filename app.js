@@ -462,4 +462,11 @@ function setupProductCards() {
     });
 }
 
-
+// ========== Search functionality ==========
+const searchIcon = document.querySelector('.nav-icons a[aria-label="Search"]');
+if (searchIcon) {
+    searchIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'search.html';
+    });
+}
